@@ -314,7 +314,7 @@ export default function Home() {
 
       <footer className="py-8 bg-secondary/10 border-t">
         <div className="container text-center text-muted-foreground">
-          <p>&copy; 2024 Magyar Iskola Tokió. {t('footer.rights')}</p>
+          <p>&copy; 2025 Magyar Iskola Tokió. {t('footer.rights')}</p>
           <p className="text-sm mt-2">{t('footer.creator')}</p>
         </div>
       </footer>
