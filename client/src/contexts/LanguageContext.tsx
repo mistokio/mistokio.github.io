@@ -61,12 +61,6 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.form.email': 'E-mail',
     'contact.form.message': 'Üzenet',
     'contact.form.send': 'Küldés',
-    
-    // en verzió - marad ahogy van
-    'contact.desc': 'We look forward to hearing from you!',
-    
-    // jp verzió - marad ahogy van
-    'contact.desc': 'ご連絡をお待ちしております！',
     'participation.title': 'Részvétel',
     'participation.desc': 'Csatlakozz a Magyar Iskola Tokióhoz!',
     'participation.welcome': 'Kiket várunk?',
