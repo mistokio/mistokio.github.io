@@ -52,9 +52,15 @@ export const translations: Record<Language, Record<string, string>> = {
     'media.title': 'Média',
     'media.desc': 'Iskolánk megjelenése a médiában és videós interjúk.',
     'contact.title': 'Lépj kapcsolatba velünk',
+    'contact.desc': 'Szeretettel várunk megkeresésedre!',
     'contact.location': 'Helyszín',
-    'contact.institute': '',
+    'contact.address': 'Helyszín',
+    'contact.institute': 'Liszt Intézet Magyar Kulturális Központ Tokió',
     'contact.email': 'Email címünk',
+    'contact.form.name': 'Név',
+    'contact.form.email': 'E-mail',
+    'contact.form.message': 'Üzenet',
+    'contact.form.send': 'Küldés',
     'participation.title': 'Részvétel',
     'participation.desc': 'Csatlakozz a Magyar Iskola Tokióhoz!',
     'participation.welcome': 'Kiket várunk?',
@@ -126,9 +132,15 @@ export const translations: Record<Language, Record<string, string>> = {
     'media.title': 'Media',
     'media.desc': 'Our school in the media and video interviews.',
     'contact.title': 'Contact Us',
+    'contact.desc': 'We look forward to hearing from you!',
     'contact.location': 'Location',
+    'contact.address': 'Location',
     'contact.institute': 'Liszt Institute Hungarian Cultural Center Tokyo',
     'contact.email': 'Our Email',
+    'contact.form.name': 'Name',
+    'contact.form.email': 'Email',
+    'contact.form.message': 'Message',
+    'contact.form.send': 'Send',
     'participation.title': 'Participation',
     'participation.desc': 'Join the Hungarian School Tokyo!',
     'participation.welcome': 'Who are we looking for?',
@@ -200,9 +212,15 @@ export const translations: Record<Language, Record<string, string>> = {
     'media.title': 'メディア',
     'media.desc': 'メディアに掲載された学校と動画インタビュー。',
     'contact.title': 'お問い合わせ',
+    'contact.desc': 'ご連絡をお待ちしております！',
     'contact.location': '場所',
+    'contact.address': '場所',
     'contact.institute': 'リスト・ハンガリー文化センター東京',
     'contact.email': 'メールアドレス',
+    'contact.form.name': '名前',
+    'contact.form.email': 'メール',
+    'contact.form.message': 'メッセージ',
+    'contact.form.send': '送信',
     'participation.title': '参加',
     'participation.desc': '東京ハンガリー学校に参加しましょう！',
     'participation.welcome': 'どんなお子様をお待ちしていますか？',
@@ -251,8 +269,4 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
 export function useLanguage() {
   const context = useContext(LanguageContext);
-  if (context === undefined) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
-}
+  if
