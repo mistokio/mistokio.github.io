@@ -73,11 +73,11 @@ export default function Media() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="lg:col-span-3"
+                className="lg:col-span-2"
               >
                 <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden">
                   <CardContent className="p-0">
-                    <div className="aspect-video w-full">
+                    <div className="aspect-video w-1/2 mx-auto">
                       <iframe 
                         width="100%" 
                         height="100%" 
@@ -105,11 +105,11 @@ export default function Media() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="lg:col-span-3"
+                className="lg:col-span-2"
               >
                 <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden">
                   <CardContent className="p-0">
-                    <div className="aspect-video w-full">
+                    <div className="aspect-video w-1/2 mx-auto">
                       <iframe 
                         src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmagyariskolatokio%2Fvideos%2F475340220724257%2F&show_text=false&width=560&t=0" 
                         width="100%" 

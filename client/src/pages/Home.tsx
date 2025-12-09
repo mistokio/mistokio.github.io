@@ -177,11 +177,11 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="lg:col-span-2"
+                className="lg:col-span-1"
               >
                 <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden">
                   <CardContent className="p-0">
-                    <div className="aspect-video w-1/2 mx-auto">
+                    <div className="aspect-video w-full">
                       <iframe 
                         width="100%" 
                         height="100%" 
@@ -203,35 +203,46 @@ export default function Home() {
                 </Card>
               </motion.div>
 
-              {/* Facebook Video News Item */}
+              {/* Article 1 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="lg:col-span-2"
+                className="lg:col-span-1"
               >
-                <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden">
-                  <CardContent className="p-0">
-                    <div className="aspect-video w-1/2 mx-auto">
-                      <iframe 
-                        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmagyariskolatokio%2Fvideos%2F475340220724257%2F&show_text=false&width=560&t=0" 
-                        width="100%" 
-                        height="100%" 
-                        style={{border: "none", overflow: "hidden"}} 
-                        scrolling="no" 
-                        frameBorder="0" 
-                        allowFullScreen={true} 
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                      ></iframe>
-                    </div>
-                    <div className="p-6">
-                      <div className="text-sm text-primary font-bold mb-2">{t('news.fbvideo.tag')}</div>
-                      <h3 className="text-xl font-bold text-foreground mb-2">{t('news.fbvideo.title')}</h3>
-                      <p className="text-muted-foreground">
-                        {t('news.fbvideo.desc')}
-                      </p>
-                    </div>
+                <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+                  <CardContent className="p-6 flex flex-col flex-1">
+                    <div className="text-sm text-primary font-bold mb-2">{t('news.article1.date')}</div>
+                    <h3 className="text-xl font-bold text-foreground mb-3">{t('news.article1.title')}</h3>
+                    <p className="text-muted-foreground flex-1">
+                      {t('news.article1.desc')}
+                    </p>
+                    <Button variant="ghost" className="w-full mt-4 text-primary hover:bg-primary/10">
+                      {t('news.readMore')} →
+                    </Button>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              {/* Article 2 - New School Year */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="lg:col-span-1"
+              >
+                <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+                  <CardContent className="p-6 flex flex-col flex-1">
+                    <div className="text-sm text-primary font-bold mb-2">{t('news.article2.date')}</div>
+                    <h3 className="text-xl font-bold text-foreground mb-3">{t('news.article2.title')}</h3>
+                    <p className="text-muted-foreground flex-1">
+                      {t('news.article2.desc')}
+                    </p>
+                    <Button variant="ghost" className="w-full mt-4 text-primary hover:bg-primary/10" onClick={() => navigate('/contact')}>
+                      {t('news.contactUs')} →
+                    </Button>
                   </CardContent>
                 </Card>
               </motion.div>
