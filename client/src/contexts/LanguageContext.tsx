@@ -52,7 +52,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'media.title': 'Média',
     'media.desc': 'Iskolánk megjelenése a médiában és videós interjúk.',
     'contact.title': 'Lépj kapcsolatba velünk',
-    'contact.desc': 'Szeretettel várunk megkeresésedre!',
+    'contact.desc': 'Szeretettel várunk!',
     'contact.location': 'Helyszín',
     'contact.address': 'Helyszín',
     'contact.institute': 'Liszt Intézet Magyar Kulturális Központ Tokió',
@@ -61,6 +61,12 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.form.email': 'E-mail',
     'contact.form.message': 'Üzenet',
     'contact.form.send': 'Küldés',
+    
+    // en verzió - marad ahogy van
+    'contact.desc': 'We look forward to hearing from you!',
+    
+    // jp verzió - marad ahogy van
+    'contact.desc': 'ご連絡をお待ちしております！',
     'participation.title': 'Részvétel',
     'participation.desc': 'Csatlakozz a Magyar Iskola Tokióhoz!',
     'participation.welcome': 'Kiket várunk?',
