@@ -171,7 +171,7 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Video News Item */}
+              {/* Video News Item - Legfrissebb (2025. október) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -193,6 +193,7 @@ export default function Home() {
                       ></iframe>
                     </div>
                     <div className="p-6">
+                      <div className="text-sm text-muted-foreground mb-2">2025. október</div>
                       <div className="text-sm text-primary font-bold mb-2">{t('news.video.tag')}</div>
                       <h3 className="text-xl font-bold text-foreground mb-2">{t('news.video.title')}</h3>
                       <p className="text-muted-foreground">
@@ -203,34 +204,12 @@ export default function Home() {
                 </Card>
               </motion.div>
 
-              {/* Article 1 */}
+              {/* Article 2 - New School Year (2025. szeptember) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="lg:col-span-1"
-              >
-                <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
-                  <CardContent className="p-6 flex flex-col flex-1">
-                    <div className="text-sm text-primary font-bold mb-2">{t('news.article1.date')}</div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">{t('news.article1.title')}</h3>
-                    <p className="text-muted-foreground flex-1">
-                      {t('news.article1.desc')}
-                    </p>
-                    <Button variant="ghost" className="w-full mt-4 text-primary hover:bg-primary/10">
-                      {t('news.readMore')} →
-                    </Button>
-                  </CardContent>
-                </Card>
-              </motion.div>
-
-              {/* Article 2 - New School Year */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
                 className="lg:col-span-1"
               >
                 <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
@@ -242,6 +221,28 @@ export default function Home() {
                     </p>
                     <Button variant="ghost" className="w-full mt-4 text-primary hover:bg-primary/10" onClick={() => navigate('/contact')}>
                       {t('news.contactUs')} →
+                    </Button>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              {/* Article 1 - Legrégebbi (2025. augusztus) */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="lg:col-span-1"
+              >
+                <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+                  <CardContent className="p-6 flex flex-col flex-1">
+                    <div className="text-sm text-primary font-bold mb-2">{t('news.article1.date')}</div>
+                    <h3 className="text-xl font-bold text-foreground mb-3">{t('news.article1.title')}</h3>
+                    <p className="text-muted-foreground flex-1">
+                      {t('news.article1.desc')}
+                    </p>
+                    <Button variant="ghost" className="w-full mt-4 text-primary hover:bg-primary/10">
+                      {t('news.readMore')} →
                     </Button>
                   </CardContent>
                 </Card>

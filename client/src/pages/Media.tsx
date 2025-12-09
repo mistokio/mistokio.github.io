@@ -89,6 +89,7 @@ export default function Media() {
                       ></iframe>
                     </div>
                     <div className="p-6">
+                      <div className="text-sm text-muted-foreground mb-2">2025. október</div>
                       <div className="text-sm text-primary font-bold mb-2">{t('news.video.tag')}</div>
                       <h3 className="text-xl font-bold text-foreground mb-2">{t('news.video.title')}</h3>
                       <p className="text-muted-foreground">
@@ -145,27 +146,6 @@ export default function Media() {
                     <h3 className="text-lg font-bold text-foreground mb-3 flex-1">{t('news.article1.title')}</h3>
                     <p className="text-muted-foreground text-sm mb-4">
                       {t('news.article1.desc')}
-                    </p>
-                    <Button variant="outline" size="sm" className="w-full">
-                      {t('news.readMore')}
-                    </Button>
-                  </CardContent>
-                </Card>
-              </motion.div>
-
-              {/* Article 2 */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                <Card className="h-full hover:shadow-lg transition-shadow flex flex-col">
-                  <CardContent className="p-6 flex flex-col flex-1">
-                    <div className="text-sm text-muted-foreground mb-2">{t('news.article2.date')}</div>
-                    <h3 className="text-lg font-bold text-foreground mb-3 flex-1">{t('news.article2.title')}</h3>
-                    <p className="text-muted-foreground text-sm mb-4">
-                      {t('news.article2.desc')}
                     </p>
                     <Button variant="outline" size="sm" className="w-full">
                       {t('news.readMore')}
