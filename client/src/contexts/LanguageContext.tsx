@@ -90,7 +90,49 @@ export const translations: Record<Language, Record<string, string>> = {
     'form.phone': 'Telefonszám',
     'form.message': 'Egyéb megjegyzés',
     'form.submit': 'Jelentkezés elküldése',
+
+    // Honlapra.docx – minőségjavított (HU)
+    'doc.title': 'Tokiói Magyar Iskola',
+    'doc.history.title': 'Történeti áttekintés',
+    'doc.history.p1':
+      'Az iskola 2020 szeptemberében indult, elsősorban a Japánban élő, magyar származású és magyarul értő gyermekek számára. A COVID egyik hozadéka az online oktatás elterjedése volt, amely átíveli a földrajzi távolságokat.',
+    'doc.history.p2':
+      'Jelenleg is jelenléti és online formában zajlik a gyermekek magyar nyelvi képzése.',
+    'doc.history.p3':
+      'Az online foglalkozások előre egyeztetett időpontban, hétköznap délutánonként érhetők el.',
+    'doc.history.p4':
+      'A jelenléti foglalkozásokat havonta kétszer, hétvégenként, korosztályok szerinti bontásban – rendszerint szombat délelőtt – tartjuk.',
+
+    'doc.groups.title': 'Csoportok',
+    'doc.groups.p1': 'Az iskola három csoporttal működik:',
+    'doc.groups.p2':
+      'Ovis csoport (2–5/6 éves korig): éneklés, játékos foglalkozások, verstanulás, mesék és bábozás.',
+    'doc.groups.p3':
+      'Iskolás csoport (6–8 évesek): írás és olvasás tanulása játékos feladatokkal.',
+    'doc.groups.p4':
+      'Iskolás csoport (8–12 évesek): a már írni-olvasni tudó gyermekek szövegértésének fejlesztése.',
+    'doc.groups.p5':
+      'A csoportokhoz létszám függvényében lehet csatlakozni.',
+
+    'doc.org.title': 'Az iskola háttérszervezete',
+    'doc.org.p1': 'Az iskola nonprofit szervezetként működik.',
+    'doc.org.nameHu': 'Neve magyarul: Magyar Nyelvet Oktatók Egyesülete',
+    'doc.org.nameEn': 'Angolul: NPO TOKYO HUNGARY LANGUAGE EDUCATION ASSOCIATION',
+    'doc.org.nameJp': 'Japánul: 一般社団法人東京ハンガリー語教育団体',
+    'doc.org.email': 'E-mail cím: magyariskolatokio@gmail.com',
+    'doc.org.tax': 'Adószám: 5 0114 0500 2303',
+    'doc.org.registry': 'Nyilvántartási szám: 0114 0500 2303',
+    'doc.org.p2': 'A támogatásokat a gyermekek oktatására fordítjuk.',
+
+    'doc.extra.title': 'Egyéb programok',
+    'doc.extra.p1':
+      'Évente egy-két alkalommal tábort szervezünk az iskola növendékeinek. A táborokban Japánban élő, magyar származású művészek tartanak foglalkozásokat. Eddig két alkalommal kerámiatábor, kokeshi-baba workshop, valamint természetben zajló festőfoglalkozás is volt egy polihisztor művésszel.',
+    'doc.extra.p2': 'Néptánctalálkozókon is rendszeresen részt veszünk.',
+    'doc.extra.p3': 'Tavaszi és őszi pikniket szervezünk.',
+    'doc.extra.p4':
+      'Célunk, hogy a gyerekek minél többet legyenek magyar nyelvi környezetben, és hogy a családok megismerjék egymást. Az évek során egy igazi, összetartó közösséggé váltunk itt, 9 000 kilométerre az anyaországtól.',
   },
+
   en: {
     'nav.home': 'Home',
     'nav.about': 'About Us',
@@ -120,7 +162,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'news.video.desc': 'Watch the latest video interview with the head of our school, talking about the beginnings and daily life.',
     'news.fbvideo.tag': 'Facebook Video',
     'news.fbvideo.title': 'Introductory Interview',
-    'news.fbvideo.desc': 'Watch the school\'s first video introduction, an interview with Viktória Nagyváthy by Zita Máté.',
+    'news.fbvideo.desc': "Watch the school's first video introduction, an interview with Viktória Nagyváthy by Zita Máté.",
     'news.article1.date': 'August 05, 2025',
     'news.article1.title': 'Interview with Viktória Nagyváthy',
     'news.article1.desc': 'Read the Marie Claire interview with our school leader about the foundation and future plans.',
@@ -163,14 +205,56 @@ export const translations: Record<Language, Record<string, string>> = {
     'footer.creator': 'Created by Gabriella Szilvia Nishizawa',
     'form.title': 'Application Form',
     'form.desc': 'Please fill out the form below to apply.',
-    'form.childName': 'Child\'s Name',
+    'form.childName': "Child's Name",
     'form.birthDate': 'Date of Birth',
-    'form.parentName': 'Parent\'s Name',
+    'form.parentName': "Parent's Name",
     'form.email': 'Email Address',
     'form.phone': 'Phone Number',
     'form.message': 'Other Comments',
     'form.submit': 'Send Application',
+
+    // Honlapra.docx – polished (EN)
+    'doc.title': 'Hungarian School Tokyo',
+    'doc.history.title': 'Historical Overview',
+    'doc.history.p1':
+      'The school started in September 2020, primarily for Hungarian-heritage children living in Japan who understand Hungarian. One positive outcome of COVID was the spread of online education, which can bridge geographical distances.',
+    'doc.history.p2':
+      'Today, we provide Hungarian language education both in person and online.',
+    'doc.history.p3':
+      'Online classes are available on weekday afternoons at an individually arranged time.',
+    'doc.history.p4':
+      'In-person classes are held twice a month on weekends—typically on Saturday mornings—in age-based groups.',
+
+    'doc.groups.title': 'Groups',
+    'doc.groups.p1': 'The school operates with three groups:',
+    'doc.groups.p2':
+      'Preschool group (ages 2 to 5–6): singing, playful activities, learning poems, stories, and puppetry.',
+    'doc.groups.p3':
+      'School-age group (ages 6–8): learning reading and writing through playful tasks.',
+    'doc.groups.p4':
+      'School-age group (ages 8–12): developing reading comprehension for children who can already read and write.',
+    'doc.groups.p5':
+      'Joining a group is possible depending on available capacity.',
+
+    'doc.org.title': 'Organizational Background',
+    'doc.org.p1': 'The school operates as a nonprofit organization.',
+    'doc.org.nameHu': 'Hungarian name: Magyar Nyelvet Oktatók Egyesülete',
+    'doc.org.nameEn': 'English name: NPO TOKYO HUNGARY LANGUAGE EDUCATION ASSOCIATION',
+    'doc.org.nameJp': 'Japanese name: 一般社団法人東京ハンガリー語教育団体',
+    'doc.org.email': 'Email: magyariskolatokio@gmail.com',
+    'doc.org.tax': 'Tax number: 5 0114 0500 2303',
+    'doc.org.registry': 'Registration number: 0114 0500 2303',
+    'doc.org.p2': 'All support is used to fund children’s education.',
+
+    'doc.extra.title': 'Additional Programs',
+    'doc.extra.p1':
+      'Once or twice a year, we organize camps for our students. At these camps, Hungarian-heritage artists living in Japan lead workshops. So far we have held ceramic camps twice, a kokeshi doll workshop, and outdoor painting in nature with a multi-talented artist.',
+    'doc.extra.p2': 'We also regularly participate in folk dance gatherings.',
+    'doc.extra.p3': 'We organize spring and autumn picnics.',
+    'doc.extra.p4':
+      'Our goal is for children to spend as much time as possible in a Hungarian-language environment and for families to get to know each other. Over the years, we have become a truly close-knit community here—9,000 km from Hungary.',
   },
+
   jp: {
     'nav.home': 'ホーム',
     'nav.about': '私たちについて',
@@ -224,7 +308,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'participation.title': '参加',
     'participation.desc': '東京ハンガリー学校に参加しましょう！',
     'participation.welcome': 'どんなお子様をお待ちしていますか？',
-    'participation.welcome.desc': 'ハンガリー系またはハンガリー系の子どもたちを以下の年齢グループでお待ちしています：',
+    'participation.welcome.desc': 'ハンガリー系またはハンガリーにルーツのあるお子様を、以下の年齢グループでお待ちしています：',
     'participation.group1.title': '小さいグループ',
     'participation.group1.age': '5歳まで',
     'participation.group1.desc': '最年少のための歌、童謡、ゲーム。',
@@ -250,6 +334,46 @@ export const translations: Record<Language, Record<string, string>> = {
     'form.phone': '電話番号',
     'form.message': 'その他コメント',
     'form.submit': '申し込みを送信',
+
+    // Honlapra.docx – polished (JP)
+    'doc.title': '東京ハンガリー学校',
+    'doc.history.title': '沿革',
+    'doc.history.p1':
+      '当校は2020年9月に開校し、日本に住むハンガリー系でハンガリー語を理解する子どもたちを主な対象としています。COVID-19の影響でオンライン教育が広がり、地理的な距離を越えて学べる環境が整いました。',
+    'doc.history.p2':
+      '現在は対面授業とオンライン授業の両方で、子どもたちのハンガリー語教育を行っています。',
+    'doc.history.p3':
+      'オンライン授業は個別に日時を調整し、平日の午後に実施しています。',
+    'doc.history.p4':
+      '対面授業は月2回、週末に年齢別グループで行い、通常は土曜日の午前中に実施しています。',
+
+    'doc.groups.title': 'グループ',
+    'doc.groups.p1': '当校は3つのグループで運営しています：',
+    'doc.groups.p2':
+      '幼児グループ（2歳〜5〜6歳）：歌、遊びを通した活動、詩の学習、読み聞かせ、人形劇など。',
+    'doc.groups.p3':
+      '学齢期グループ（6〜8歳）：遊びを取り入れながら読み書きを学びます。',
+    'doc.groups.p4':
+      '学齢期グループ（8〜12歳）：すでに読み書きができる子どもたちの読解力を伸ばします。',
+    'doc.groups.p5': '参加は定員状況により可能です。',
+
+    'doc.org.title': '運営団体',
+    'doc.org.p1': '当校は非営利団体として運営されています。',
+    'doc.org.nameHu': 'ハンガリー語名：Magyar Nyelvet Oktatók Egyesülete',
+    'doc.org.nameEn': '英語名：NPO TOKYO HUNGARY LANGUAGE EDUCATION ASSOCIATION',
+    'doc.org.nameJp': '日本語名：一般社団法人東京ハンガリー語教育団体',
+    'doc.org.email': 'メール：magyariskolatokio@gmail.com',
+    'doc.org.tax': '納税者番号：5 0114 0500 2303',
+    'doc.org.registry': '登録番号：0114 0500 2303',
+    'doc.org.p2': 'ご支援はすべて子どもたちの教育のために活用されます。',
+
+    'doc.extra.title': 'その他の活動',
+    'doc.extra.p1':
+      '年に1〜2回、生徒向けのキャンプを開催しています。キャンプでは、日本在住のハンガリー系アーティストがワークショップを行います。これまでに陶芸キャンプ（2回）、こけし人形ワークショップ、自然の中での屋外ペインティングなどを実施しました。',
+    'doc.extra.p2': 'フォークダンスの交流会にも定期的に参加しています。',
+    'doc.extra.p3': '春と秋にピクニックを企画しています。',
+    'doc.extra.p4':
+      '子どもたちができるだけ多くハンガリー語環境で過ごし、家族同士がつながることを目指しています。祖国から9,000km離れたこの地で、私たちは年々、強い絆のあるコミュニティへと成長してきました。',
   }
 };
 
