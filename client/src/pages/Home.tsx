@@ -177,7 +177,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="mt-14 max-w-4xl"
             >
-              <SchoolDocContent />
+         {/* <SchoolDocContent /> */}
             </motion.div>
           </div>
         </section>
