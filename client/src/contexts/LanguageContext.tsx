@@ -26,13 +26,17 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.mission': 'Küldetésünk',
     'about.desc': 'A Magyar Iskola Tokió célja a magyar nyelv és kultúra ápolása Japánban élő gyermekek számára.',
     'programs.title': 'Oktatás',
-    'programs.desc': 'Havonta kétszer, szombatonként tartunk foglalkozásokat.',
-    'programs.creative.title': 'Kiscsoport (1-5 éves korosztály)',
-    'programs.creative.desc': 'Dalok és mondókák a legkisebbek részére. Babák, bölcsisek és ovisok csoportja.',
-    'programs.language.title': 'Középső csoport (6-9 évesek)',
-    'programs.language.desc': 'Olvasás és írás elsajátítása, játékos magyar nyelvtanulás az alsó tagozatos korú gyermekek számára.',
-    'programs.community.title': 'Nagycsoport (10 éves kortól)',
-    'programs.community.desc': 'Szókincsfejlesztés, helyesírási gyakorlatok nagyobb gyermekek számára',
+    'programs.desc': 'Havonta kétszer, szombatonként tartunk foglalkozásokat. A csoportokhoz létszám függvényében lehet csatlakozni.',
+    
+    'programs.creative.title': 'Ovis csoport (2–5/6 éves korig)',
+    'programs.creative.desc': 'Éneklés, játékos foglalkozások, verstanulás, mesék és bábozás.',
+
+    'programs.language.title': 'Iskolás csoport (6–8 évesek)',
+    'programs.language.desc': 'Írás és olvasás tanulása játékos feladatokkal.',
+
+    'programs.community.title': 'Iskolás csoport (8–12 évesek)',
+    'programs.community.desc': 'A már írni-olvasni tudó gyermekek szövegértésének fejlesztése.',
+    
     'news.title': 'Híreink',
     'news.desc': 'Aktuális információk és események iskolánk életéből.',
     'news.video.tag': 'Videó Interjú',
@@ -65,15 +69,19 @@ export const translations: Record<Language, Record<string, string>> = {
     'participation.desc': 'Csatlakozz a Magyar Iskola Tokióhoz!',
     'participation.welcome': 'Kiket várunk?',
     'participation.welcome.desc': 'Magyar, illetve magyar származású gyermekeket várunk az alábbi korcsoportokba:',
-    'participation.group1.title': 'Kiscsoport',
-    'participation.group1.age': '0-5 éves korig',
-    'participation.group1.desc': 'Dalok, mondókák és játékok a legkisebbek számára.',
-    'participation.group2.title': 'Középső csoport',
-    'participation.group2.age': '6-9 évesek',
-    'participation.group2.desc': 'Olvasás, írás és játékos magyar nyelvtanulás.',
-    'participation.group3.title': 'Nagycsoport',
-    'participation.group3.age': '10 éves kortól',
-    'participation.group3.desc': 'Szókincsfejlesztés és helyesírási gyakorlatok.',
+    
+    'participation.group1.title': 'Ovis csoport',
+    'participation.group1.age': '2–5/6 éves korig',
+    'participation.group1.desc': 'Éneklés, játékos foglalkozások, verstanulás, mesék és bábozás.',
+
+    'participation.group2.title': 'Iskolás csoport',
+    'participation.group2.age': '6–8 évesek',
+    'participation.group2.desc': 'Írás és olvasás tanulása játékos feladatokkal.',
+
+    'participation.group3.title': 'Iskolás csoport',
+    'participation.group3.age': '8–12 évesek',
+    'participation.group3.desc': 'A már írni-olvasni tudó gyermekek szövegértésének fejlesztése.',
+    
     'participation.membership': 'Tagdíj',
     'participation.membership.desc': 'Az éves tagdíj: XY yen',
     'participation.apply': 'Jelentkezés',
