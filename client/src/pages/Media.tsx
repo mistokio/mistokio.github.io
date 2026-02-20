@@ -162,7 +162,7 @@ export default function Media() {
       <footer className="border-t bg-secondary/5 py-8">
         <div className="container text-center text-sm text-muted-foreground">
           <p>{t('footer.rights')}</p>
-          <p>{t('footer.creator')}</p>
+          <p className="text-xs mt-1">{t('footer.creator')}</p>
         </div>
       </footer>
     </div>
