@@ -7,6 +7,9 @@ import { useHashLocation } from "wouter/use-hash-location";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Programs from "./pages/Programs";
+import Gallery from "./pages/Gallery";
 import Media from "./pages/Media";
 import Participation from "./pages/Participation";
 
@@ -17,6 +20,9 @@ function Router() {
     <WouterRouter hook={useHashLocation}>
       <Switch>
         <Route path={"/"} component={Home} />
+        <Route path={"/about"} component={About} />
+        <Route path={"/programs"} component={Programs} />
+        <Route path={"/gallery"} component={Gallery} />
         <Route path={"/media"} component={Media} />
         <Route path={"/participation"} component={Participation} />
         <Route path={"/404"} component={NotFound} />
