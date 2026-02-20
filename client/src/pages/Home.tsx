@@ -18,51 +18,21 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-background font-sans">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2 font-bold text-xl text-primary">
-            <img
-              src="/images/school_logo.png"
-              alt="Logo"
-              className="h-12 w-12 rounded-full object-cover border-2 border-primary hover:scale-110 transition-transform duration-300"
-            />
-            <span>{t("hero.title")}</span>
+        <div className="container flex h-16 items-center justify-between px-4">
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 font-bold text-xl text-primary cursor-pointer" onClick={() => { window.location.hash = "/"; window.scrollTo(0, 0); }}>
+              <img src="/images/school_logo.png" alt="Logo" className="h-12 w-12 rounded-full object-cover border-2 border-primary" />
+              <span>{t('hero.title')}</span>
+            </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="hidden md:flex gap-6 text-sm font-medium text-muted-foreground">
-              <button
-                onClick={() =>
-                  document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="hover:text-primary transition-colors"
-              >
-                {t("nav.about")}
-              </button>
-              <button
-                onClick={() =>
-                  document.getElementById("programs")?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="hover:text-primary transition-colors"
-              >
-                {t("nav.programs")}
-              </button>
-              <button
-                onClick={() =>
-                  document.getElementById("news")?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="hover:text-primary transition-colors"
-              >
-                {t("nav.news")}
-              </button>
-              <button
-                onClick={() =>
-                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="hover:text-primary transition-colors"
-              >
-                {t("nav.contact")}
-              </button>
-            </div>
-            <div className="flex gap-2">
+            <Button variant="ghost" size="sm" onClick={() => window.location.hash = "#/about"}>{t('nav.about')}</Button>
+            <Button variant="ghost" size="sm" onClick={() => window.location.hash = "#/programs"}>{t('nav.programs')}</Button>
+            <Button variant="ghost" size="sm" onClick={() => window.location.hash = "#/gallery"}>{t('nav.gallery')}</Button>
+            <Button variant="ghost" size="sm" onClick={() => document.getElementById("news")?.scrollIntoView({ behavior: "smooth" })}>{t('nav.news')}</Button>
+            <Button variant="ghost" size="sm" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>{t('nav.contact')}</Button>
+          </div>
+          <div className="flex gap-2">
               <Button
                 variant={language === "hu" ? "default" : "ghost"}
                 size="sm"
@@ -85,7 +55,6 @@ export default function Home() {
                 JP
               </Button>
             </div>
-          </div>
         </div>
       </nav>
 
@@ -192,7 +161,6 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-serif">
                 {t("programs.title")}
               </h2>
-              <p className="text-lg text-muted-foreground">{t("programs.desc")}</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -228,17 +196,15 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-serif">
                 {t("news.title")}
               </h2>
-              <p className="text-lg text-muted-foreground">{t("news.desc")}</p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {/* Video News Item */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="lg:col-span-3"
               >
                 <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden">
                   <CardContent className="p-0">
@@ -253,10 +219,10 @@ export default function Home() {
                         allowFullScreen
                       ></iframe>
                     </div>
-                    <div className="p-6">
-                      <div className="text-sm text-primary font-bold mb-2">{t("news.video.tag")}</div>
-                      <h3 className="text-xl font-bold text-foreground mb-2">{t("news.video.title")}</h3>
-                      <p className="text-muted-foreground">{t("news.video.desc")}</p>
+                    <div className="p-4">
+                      <div className="text-sm text-primary font-bold mb-1">{t("news.video.tag")}</div>
+                      <h3 className="text-lg font-bold text-foreground mb-1">{t("news.video.title")}</h3>
+                      <p className="text-sm text-muted-foreground">{t("news.video.desc")}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -268,7 +234,6 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="lg:col-span-3"
               >
                 <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden">
                   <CardContent className="p-0">
@@ -284,10 +249,10 @@ export default function Home() {
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                       ></iframe>
                     </div>
-                    <div className="p-6">
-                      <div className="text-sm text-primary font-bold mb-2">{t("news.fbvideo.tag")}</div>
-                      <h3 className="text-xl font-bold text-foreground mb-2">{t("news.fbvideo.title")}</h3>
-                      <p className="text-muted-foreground">{t("news.fbvideo.desc")}</p>
+                    <div className="p-4">
+                      <div className="text-sm text-primary font-bold mb-1">{t("news.fbvideo.tag")}</div>
+                      <h3 className="text-lg font-bold text-foreground mb-1">{t("news.fbvideo.title")}</h3>
+                      <p className="text-sm text-muted-foreground">{t("news.fbvideo.desc")}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -333,23 +298,40 @@ export default function Home() {
 
               <Card className="p-6">
                 <CardContent className="space-y-4 pt-6">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium">{t("contact.form.name")}</label>
-                      <input type="text" className="w-full p-2 rounded-md border bg-background" />
+                  <form onSubmit={(e) => {
+                    e.preventDefault();
+                    const formData = new FormData(e.currentTarget);
+                    const name = formData.get('name') as string;
+                    const email = formData.get('email') as string;
+                    const message = formData.get('message') as string;
+                    
+                    const subject = encodeURIComponent('Kapcsolatfelvétel a weboldalról');
+                    const body = encodeURIComponent(
+                      `Név: ${name}\n` +
+                      `Email: ${email}\n\n` +
+                      `Üzenet:\n${message}`
+                    );
+                    
+                    window.location.href = `mailto:magyariskolatokio@gmail.com?subject=${subject}&body=${body}`;
+                  }}>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium">{t("contact.form.name")}</label>
+                        <input name="name" type="text" required className="w-full p-2 rounded-md border bg-background" />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium">{t("contact.form.email")}</label>
+                        <input name="email" type="email" required className="w-full p-2 rounded-md border bg-background" />
+                      </div>
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">{t("contact.form.email")}</label>
-                      <input type="email" className="w-full p-2 rounded-md border bg-background" />
+                      <label className="text-sm font-medium">{t("contact.form.message")}</label>
+                      <textarea name="message" required className="w-full p-2 rounded-md border bg-background min-h-[150px]"></textarea>
                     </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium">{t("contact.form.message")}</label>
-                    <textarea className="w-full p-2 rounded-md border bg-background min-h-[150px]"></textarea>
-                  </div>
-                  <Button className="w-full" onClick={() => (window.location.href = "mailto:magyariskolatokio@gmail.com")}>
-                    {t("contact.form.send")}
-                  </Button>
+                    <Button type="submit" className="w-full">
+                      {t("contact.form.send")}
+                    </Button>
+                  </form>
                 </CardContent>
               </Card>
             </div>
@@ -359,8 +341,8 @@ export default function Home() {
 
       <footer className="py-8 bg-secondary/10 border-t">
         <div className="container text-center text-muted-foreground">
-          <p>&copy; 2025 Magyar Iskola Tokió. {t("footer.rights")}</p>
-          <p className="text-sm mt-2">{t("footer.creator")}</p>
+          <p>{t("footer.rights")}</p>
+          <p className="text-xs mt-1">{t("footer.creator")}</p>
         </div>
       </footer>
     </div>
