@@ -40,11 +40,16 @@ export const translations: Record<Language, Record<string, string>> = {
     
     'news.title': 'Híreink',
     'news.desc': 'Aktuális információk és események iskolánk életéből.',
-    'news.video.tag': 'Videó Interjú',
+
+    "news.video3.tag": "Videó interjú",
+    "news.video3.title": "Interjú Nagyváthy Viktóriával, iskolánk vezetőjével",
+    "news.video3.desc": "A Pécsi Tudományegyetem által készített beszélgetés a diaszpórában folyó magyar nyelvoktatásról és iskolánkról.",
+    
+    'news.video.tag': 'PTE interjú',
     'news.video.title': 'Beszélgetés Nagyváthy Viktóriával',
     'news.video.desc': 'Tekintsétek meg a legújabb videóinterjút iskolánk vezetőjével, ahol mesél a kezdetekről és a mindennapokról.',
-    'news.fbvideo.tag': 'Facebook Videó',
-    'news.fbvideo.title': 'Bemutatkozó Interjú',
+    'news.fbvideo.tag': 'Facebook videó',
+    'news.fbvideo.title': 'Bemutatkozó interjú',
     'news.fbvideo.desc': 'Nézzétek meg az iskola első videós bemutatkozását, melyet Máté Zita készített Nagyváthy Viktóriával.',
     'news.article1.date': '2025. Augusztus 05.',
     'news.article1.title': 'Interjú Nagyváthy Viktóriával',
@@ -169,6 +174,11 @@ export const translations: Record<Language, Record<string, string>> = {
     'programs.community.desc': 'Developing reading comprehension for children who can already read and write.',
     'news.title': 'Latest News',
     'news.desc': 'Current information and events from our school life.',
+
+    "news.video3.tag": "PTE Interview",
+    "news.video3.title": "Interview with Viktória Nagyváthy, Head of Our School",
+    "news.video3.desc": "A conversation produced by the University of Pécs on Hungarian language teaching in the diaspora and about our school.",
+    
     'news.video.tag': 'Video Interview',
     'news.video.title': 'Conversation with Viktória Nagyváthy',
     'news.video.desc': 'Watch the latest video interview with the head of our school, talking about the beginnings and daily life.',
@@ -294,6 +304,11 @@ export const translations: Record<Language, Record<string, string>> = {
     'programs.community.desc': 'すでに読み書きができる子どもたちの読解力を伸ばします。',
     'news.title': 'ニュース',
     'news.desc': '学校生活からの最新情報とイベント。',
+
+    "news.video3.tag": "インタビュー",
+    "news.video3.title": "校長ナジヴァーティ・ヴィクトーリアへのインタビュー",
+    "news.video3.desc": "ペーチ大学が制作した、ディアスポラにおけるハンガリー語教育と本校についての対談です。",
+    
     'news.video.tag': 'ビデオインタビュー',
     'news.video.title': 'ナジヴァーティ・ヴィクトリアとの対談',
     'news.video.desc': '学校代表への最新ビデオインタビューをご覧ください。設立の経緯や日々の活動について語っています。',
