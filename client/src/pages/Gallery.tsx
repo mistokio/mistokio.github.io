@@ -3,6 +3,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { useLocation } from "wouter";
+import SupporterLogos from "@/components/SupporterLogos";
 
 export default function Gallery() {
   const { t, language, setLanguage } = useLanguage();
@@ -94,6 +95,8 @@ export default function Gallery() {
         </section>
       </main>
 
+      <SupporterLogos />
+      
       {/* Footer */}
       <footer className="border-t bg-secondary/5 py-8">
         <div className="container text-center text-sm text-muted-foreground">
