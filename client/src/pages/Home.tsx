@@ -199,7 +199,37 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+{/* Új videó – első helyen */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="aspect-video w-full">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/0wcn6iOUmUM"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                    <div className="p-4">
+                      <div className="text-sm text-primary font-bold mb-1">{t("news.video3.tag")}</div>
+                      <h3 className="text-lg font-bold text-foreground mb-1">{t("news.video3.title")}</h3>
+                      <p className="text-sm text-muted-foreground">{t("news.video3.desc")}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+              
               {/* Video News Item */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
