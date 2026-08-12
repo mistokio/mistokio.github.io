@@ -41,11 +41,11 @@ export const translations: Record<Language, Record<string, string>> = {
     'news.title': 'Híreink',
     'news.desc': 'Aktuális információk és események iskolánk életéből.',
 
-    "news.video3.tag": "Videó interjú",
+    "news.video3.tag": "PTE interjú",
     "news.video3.title": "Interjú Nagyváthy Viktóriával, iskolánk vezetőjével",
     "news.video3.desc": "A Pécsi Tudományegyetem által készített beszélgetés a diaszpórában folyó magyar nyelvoktatásról és iskolánkról.",
     
-    'news.video.tag': 'PTE interjú',
+    'news.video.tag': 'Videó interjú',
     'news.video.title': 'Beszélgetés Nagyváthy Viktóriával',
     'news.video.desc': 'Tekintsétek meg a legújabb videóinterjút iskolánk vezetőjével, ahol mesél a kezdetekről és a mindennapokról.',
     'news.fbvideo.tag': 'Facebook videó',
