@@ -8,12 +8,12 @@ export default function SupporterLogos() {
         <img
           src={bgaLogo}
           alt="Bethlen Gábor Alap"
-          className="h-24 md:h-28 w-auto object-contain"
+          className="h-48 md:h-56 w-auto object-contain"
         />
         <img
           src={megvalosult}
           alt="Megvalósult a Magyar Kormány támogatásával – Miniszterelnökség Nemzetpolitikai Államtitkárság"
-          className="h-20 md:h-24 w-auto object-contain"
+          className="h-40 md:h-48 w-auto object-contain"
         />
       </div>
     </section>
